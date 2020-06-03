@@ -8,7 +8,7 @@ In particular, it is **essential** to read the following pages on their wiki,
 - [Overview](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.1-Overview)
 - [Backing Up](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.2-Backing-Up)
 - [Implementation](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.3-Implementation)
-- [Applying Your Changes](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.3-Implementation)
+- [Applying Your Changes](https://github.com/ghacksuserjs/ghacks-user.js/wiki/3.2-Applying-Your-Changes)
 - [Updater Scripts](https://github.com/ghacksuserjs/ghacks-user.js/wiki/3.3-Updater-Scripts)
 
 ## What are these files?
