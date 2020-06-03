@@ -3,7 +3,7 @@
 To understand what this repo is about and how to use it, you should read the 
 documentation for [`ghacks-user.js`](https://github.com/ghacksuserjs/ghacks-user.js). 
 In particular, it is **essential** to read the following pages on their wiki, 
-**or you WILL pay for it!**:
+**or you WILL pay for it!**
 
 - [Overview](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.1-Overview)
 - [Backing Up](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.2-Backing-Up)
