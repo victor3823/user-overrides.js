@@ -141,6 +141,12 @@ user_pref("media.getusermedia.audiocapture.enabled", true);
 // 2510: disable Web Audio API [FF51+]
 user_pref("dom.webaudio.enabled", true);
 
+// 2010: disable WebGL (Web Graphics Library)
+user_pref("webgl.disabled", false);
+
+// 2012: limit WebGL
+user_pref("webgl.min_capability_mode", false);
+
 /***/
 
 
