@@ -114,6 +114,9 @@ user_pref("media.autoplay.enabled.user-gestures-needed", true);
 // Force Firefox to use a GTK theme
 user_pref("widget.content.gtk-theme-override", "Arc-Dark");
 
+// 2404: disable clipboard commands (cut/copy) from "non-privileged" content [FF41+]
+user_pref("dom.allow_cut_copy", true);
+
 
 /*
  * PROFILE-SPECIFIC
