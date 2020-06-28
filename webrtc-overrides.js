@@ -117,6 +117,15 @@ user_pref("widget.content.gtk-theme-override", "Arc-Dark");
 // 2404: disable clipboard commands (cut/copy) from "non-privileged" content [FF41+]
 user_pref("dom.allow_cut_copy", true);
 
+/* 0350: disable Crash Reports ***/
+user_pref("breakpad.reportURL", "https://crash-stats.mozilla.org/report/index/");
+user_pref("browser.tabs.crashReporting.sendReport", true); // [FF44+]
+user_pref("browser.crashReports.unsubmittedCheck.enabled", true); // [FF51+]
+
+/* 0351: disable backlogged Crash Reports
+ * [SETTING] Privacy & Security>Firefox Data Collection & Use>Allow Firefox to send backlogged crash reports  ***/
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", true); // [FF58+]
+
 
 /*
  * PROFILE-SPECIFIC
