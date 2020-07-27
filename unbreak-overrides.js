@@ -28,6 +28,10 @@ user_pref("privacy.resistFingerprinting.block_mozAddonManager", false); // [HIDD
 // 4504: enable RFP letterboxing
 user_pref("privacy.resistFingerprinting.letterboxing", false); // [HIDDEN PREF]
 
+/* 4520: disable chrome animations [FF77+] [RESTART]
+ * [NOTE] pref added in FF63, but applied to chrome in FF77. RFP spoofs this for web content ***/
+user_pref("ui.prefersReducedMotion", 0); // [HIDDEN PREF]
+
 
 /*
  * [SETUP-*] TAGS
@@ -109,7 +113,7 @@ user_pref("clipboard.autocopy", false);
 user_pref("signon.rememberSignons", false);
 
 // 2031: disable autoplay of HTML5 media if you interacted with the site [FF66+]
-user_pref("media.autoplay.enabled.user-gestures-needed", true);
+user_pref("media.autoplay.blocking_policy", 0);
 
 // Force Firefox to use a GTK theme
 user_pref("widget.content.gtk-theme-override", "Arc-Dark");
