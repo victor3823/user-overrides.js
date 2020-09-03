@@ -81,6 +81,15 @@ user_pref("javascript.options.asmjs", true);
 // 2422: disable WebAssembly [FF52+]
 user_pref("javascript.options.wasm", true);
 
+/* 2701: disable 3rd-party cookies and site-data [SETUP-WEB]
+ * 0=Accept cookies and site data, 1=(Block) All third-party cookies, 2=(Block) All cookies,
+ * 3=(Block) Cookies from unvisited websites, 4=(Block) Cross-site and social media trackers (FF63+) (default FF69+)
+ * [NOTE] You can set exceptions under site permissions or use an extension
+ * [NOTE] Enforcing category to custom ensures ETP related prefs are always honored
+ * [SETTING] Privacy & Security>Enhanced Tracking Protection>Custom>Cookies ***/
+user_pref("network.cookie.cookieBehavior", 4);
+user_pref("browser.contentblocking.category", "strict");
+
 
 /*
  * OTHERS FROM https://www.privacytools.io/browsers/#about_config
