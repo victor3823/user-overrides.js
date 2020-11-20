@@ -10,7 +10,7 @@ user_pref("browser.safebrowsing.downloads.remote.url", "https://sb-ssl.google.co
  * UNCOMMENT TO SAVE HISTORY
  */
 // 2802: enable Firefox to clear items on shutdown
-// user_pref("privacy.sanitize.sanitizeOnShutdown", false);
+user_pref("privacy.sanitize.sanitizeOnShutdown", false);
 
 // 0860: disable search and form history
 // user_pref("browser.formfill.enable", true);
