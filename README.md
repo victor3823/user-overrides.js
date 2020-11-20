@@ -1,15 +1,15 @@
-# My overrides for `ghacks-user.js`
+# My overrides for the arkenfox `user.js`
 ## Before you start
 To understand what this repo is about and how to use it, you should read the 
-documentation for [`ghacks-user.js`](https://github.com/ghacksuserjs/ghacks-user.js). 
+documentation for [arkenfox/user.js](https://github.com/arkenfox/user.js/). 
 In particular, it is **essential** to read the following pages on their wiki, 
 **or you WILL pay for it!**
 
-- [Overview](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.1-Overview)
-- [Backing Up](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.2-Backing-Up)
-- [Implementation](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.3-Implementation)
-- [Applying Your Changes](https://github.com/ghacksuserjs/ghacks-user.js/wiki/3.2-Applying-Your-Changes)
-- [Updater Scripts](https://github.com/ghacksuserjs/ghacks-user.js/wiki/3.3-Updater-Scripts)
+- [Overview](https://github.com/arkenfox/user.js/wiki/1.1-Overview)
+- [Backing Up](https://github.com/arkenfox/user.js/wiki/1.2-Backing-Up)
+- [Implementation](https://github.com/arkenfox/user.js/wiki/1.3-Implementation)
+- [Applying Your Changes](https://github.com/arkenfox/user.js/wiki/3.2-Applying-Your-Changes)
+- [Updater Scripts](https://github.com/arkenfox/user.js/wiki/3.3-Updater-Scripts)
 
 ## What are these files?
 Assuming you have read the documentation linked above, there are 3 files here, 
