@@ -55,9 +55,6 @@ user_pref("browser.sessionstore.privacy_level", 0);
 // 1023: set the minimum interval between session save operations
 user_pref("browser.sessionstore.interval", 15000);
 
-// 1401: disable websites choosing fonts (0=block, 1=allow)
-user_pref("browser.display.use_document_fonts", 1);
-
 /* 1604: CROSS ORIGIN: control the amount of information to send [FF52+]
  * 0=send full URI (default), 1=scheme+host+port+path, 2=scheme+host+port ***/
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2); // [DEFAULT: 0]
