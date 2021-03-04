@@ -1,30 +1,9 @@
-user_pref("_user.js.parrot", "overrides section syntax error");
-
-
-// 0412: disable SB checks for downloads (remote)
-user_pref("browser.safebrowsing.downloads.remote.enabled", true);
-user_pref("browser.safebrowsing.downloads.remote.url", "https://sb-ssl.google.com/safebrowsing/clientreport/download?key=%GOOGLE_SAFEBROWSING_API_KEY%");
-
-
-/*
- * UNCOMMENT TO SAVE HISTORY
- */
-// 2802: enable Firefox to clear items on shutdown
-user_pref("privacy.sanitize.sanitizeOnShutdown", false);
-
-// 0860: disable search and form history
-// user_pref("browser.formfill.enable", true);
+user_pref("_user.js.parrot", "base overrides: syntax error");
 
 
 /*
  * RFP SETTINGS
  */
-// 4501: enable privacy.resistFingerprinting
-user_pref("privacy.resistFingerprinting", false);
-
-// 4503: disable mozAddonManager Web API
-user_pref("privacy.resistFingerprinting.block_mozAddonManager", false); // [HIDDEN PREF]
-
 // 4504: enable RFP letterboxing
 user_pref("privacy.resistFingerprinting.letterboxing", false); // [HIDDEN PREF]
 
@@ -54,10 +33,6 @@ user_pref("browser.sessionstore.privacy_level", 0);
 
 // 1023: set the minimum interval between session save operations
 user_pref("browser.sessionstore.interval", 15000);
-
-/* 1604: CROSS ORIGIN: control the amount of information to send [FF52+]
- * 0=send full URI (default), 1=scheme+host+port+path, 2=scheme+host+port ***/
-user_pref("network.http.referer.XOriginTrimmingPolicy", 2); // [DEFAULT: 0]
 
 // 1825: disable widevine CDM (Content Decryption Module)
 user_pref("media.gmp-widevinecdm.visible", true);
@@ -127,49 +102,17 @@ user_pref("widget.content.gtk-theme-override", "Arc-Dark");
 // 2404: disable clipboard commands (cut/copy) from "non-privileged" content [FF41+]
 user_pref("dom.allow_cut_copy", true);
 
-/* 0350: disable Crash Reports ***/
-user_pref("breakpad.reportURL", "https://crash-stats.mozilla.org/report/index/");
-user_pref("browser.tabs.crashReporting.sendReport", true); // [FF44+]
-user_pref("browser.crashReports.unsubmittedCheck.enabled", true); // [FF51+]
+// Disable smooth scrolling
+user_pref("general.smoothScroll", false);
 
-/* 0351: disable backlogged Crash Reports
- * [SETTING] Privacy & Security>Firefox Data Collection & Use>Allow Firefox to send backlogged crash reports  ***/
-user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", true); // [FF58+]
+// Disable Pocket
+user_pref("extensions.pocket.enabled", false);
 
+// Disable Firefox Accounts
+user_pref("identity.fxaccounts.enabled", false);
 
-/*
- * PROFILE-SPECIFIC
- */
-/* 1603: CROSS ORIGIN: control when to send a referer
- * 0=always (default), 1=only if base domains match, 2=only if hosts match
- * NOTE: set to 0 to "unbreak" websites, set to 2 to minimise fingerprint*/
-user_pref("network.http.referer.XOriginPolicy", 2);
-
-// Uncomment these (replace the * with a /) and disable RFP to use WebRTC (Jitsi Meet, Discord, etc)
-
-// 2001: disable WebRTC (Web Real-Time Communication)
-user_pref("media.peerconnection.enabled", true);
-
-// 2002: limit WebRTC IP leaks if using WebRTC
-user_pref("media.peerconnection.ice.default_address_only", false);
-user_pref("media.peerconnection.ice.no_host", false); // [FF51+]
-user_pref("media.peerconnection.ice.proxy_only_if_behind_proxy", false); // [FF70+]
-
-// 2022: disable screensharing
-user_pref("media.getusermedia.screensharing.enabled", true);
-user_pref("media.getusermedia.browser.enabled", true);
-user_pref("media.getusermedia.audiocapture.enabled", true);
-
-// 2510: disable Web Audio API [FF51+]
-user_pref("dom.webaudio.enabled", true);
-
-// 2010: disable WebGL (Web Graphics Library)
-user_pref("webgl.disabled", false);
-
-// 2012: limit WebGL
-user_pref("webgl.min_capability_mode", false);
-
-/***/
+// Disable "what's new"
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false); 
 
 
 user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!");

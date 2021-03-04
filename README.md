@@ -12,16 +12,22 @@ In particular, it is **essential** to read the following pages on their wiki,
 - [Updater Scripts](https://github.com/arkenfox/user.js/wiki/3.3-Updater-Scripts)
 
 ## What are these files?
-Assuming you have read the documentation linked above, there are 3 files here, 
+`base.js` is the basis of the overrides.  
+
+The other 3 files contain additional settings 
 for [profiles](https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles)
 used in different scenarios:
 
-- `default-overrides.js` is for your daily browsing. It saves history and has (fairly)
-strong privacy & security protections.
-- `unbreak-overrides.js` is for a disposable (sanitized on shutdown) profile used
+- `profile-default.js` saves history and enables Firefox accounts.
+- `profile-unbreak.js` is for a disposable (sanitized on shutdown) profile used
 to "unbreak" websites that rely on the [`Referer`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer)
 header.
-- `webrtc-overrides.js` has many of the protections relaxed to make WebRTC work.
+- `profile-webrtc.js` has many of the protections relaxed to make WebRTC work.
 It should be used for WebRTC *only*.
+
+To make a complete `user.js` for each profile, combine the original (arkenfox) `user.js`, the base file and the profile-specific file like so:
+```
+cat user.js base.js profile-default.js > default-user.js
+```
 
 Feel free to modify these to suit your taste. Have fun!
