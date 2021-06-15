@@ -16,7 +16,7 @@ user_pref("ui.prefersReducedMotion", 0); // [HIDDEN PREF]
  * [SETUP-*] TAGS
  */
 // 0211: enforce US English locale regardless of the system locale
-user_pref("javascript.use_us_english_locale", false); // [HIDDEN PREF]
+//user_pref("javascript.use_us_english_locale", false); // [HIDDEN PREF]
 
 // 0801: disable location bar using search
 user_pref("keyword.enabled", true);
@@ -96,9 +96,6 @@ user_pref("signon.rememberSignons", false);
 // 2031: disable autoplay of HTML5 media if you interacted with the site [FF66+]
 user_pref("media.autoplay.blocking_policy", 0);
 
-// Force Firefox to use a GTK theme
-user_pref("widget.content.gtk-theme-override", "Arc-Dark");
-
 // 2404: disable clipboard commands (cut/copy) from "non-privileged" content [FF41+]
 user_pref("dom.allow_cut_copy", true);
 
@@ -113,6 +110,23 @@ user_pref("identity.fxaccounts.enabled", false);
 
 // Disable "what's new"
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false); 
+
+
+/*
+ * THEMING 
+ */
+
+// Enable userchrome.css, usercontent.css
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
+// Fill SVG Color
+user_pref("svg.context-properties.content.enabled", true);
+
+// CSS Blur Filter [FF88+]
+user_pref("layout.css.backdrop-filter.enabled", true);
+
+// Show compact mode option
+user_pref("browser.compactmode.show", true);
 
 
 user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!");
