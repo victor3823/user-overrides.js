@@ -62,6 +62,20 @@ user_pref("javascript.options.wasm", true);
 user_pref("network.cookie.cookieBehavior", 4);
 user_pref("browser.contentblocking.category", "strict");
 
+/** SSL (Secure Sockets Layer) / TLS (Transport Layer Security) ***/
+/* 1201: require safe negotiation
+ * Blocks connections (SSL_ERROR_UNSAFE_NEGOTIATION) to servers that don't support RFC 5746 [2]
+ * as they're potentially vulnerable to a MiTM attack [3]. A server without RFC 5746 can be
+ * safe from the attack if it disables renegotiations but the problem is that the browser can't
+ * know that. Setting this pref to true is the only way for the browser to ensure there will be
+ * no unsafe renegotiations on the channel between the browser and the server.
+ * [STATS] SSL Labs (Dec 2020) reports 99.0% of sites have secure renegotiation [4]
+ * [1] https://wiki.mozilla.org/Security:Renegotiation
+ * [2] https://tools.ietf.org/html/rfc5746
+ * [3] https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3555
+ * [4] https://www.ssllabs.com/ssl-pulse/ ***/
+user_pref("security.ssl.require_safe_negotiation", false);
+
 
 /*
  * OTHERS FROM https://www.privacytools.io/browsers/#about_config
