@@ -107,9 +107,6 @@ user_pref("clipboard.autocopy", false);
 // 0901: disable saving passwords
 user_pref("signon.rememberSignons", false);
 
-// 2031: disable autoplay of HTML5 media if you interacted with the site [FF66+]
-user_pref("media.autoplay.blocking_policy", 0);
-
 // 2404: disable clipboard commands (cut/copy) from "non-privileged" content [FF41+]
 user_pref("dom.allow_cut_copy", true);
 
