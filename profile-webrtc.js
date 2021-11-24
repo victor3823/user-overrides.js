@@ -4,6 +4,11 @@ user_pref("_user.js.parrot", "WebRTC profile: syntax error");
 // 2802: Save history
 user_pref("privacy.sanitize.sanitizeOnShutdown", false);
 
+/* 2801: save cookies
+ * 0=keep until they expire (default), 2=keep until you close Firefox
+ */
+user_pref("network.cookie.lifetimePolicy", 0);
+
 // 4501: Disable RFP
 user_pref("privacy.resistFingerprinting", false);
 

@@ -96,7 +96,6 @@ user_pref("browser.startup.homepage", "about:home");
 
 // 0104: set NEWTAB page
 user_pref("browser.newtabpage.enabled", true);
-user_pref("browser.newtab.preload", true);
 
 // 0105d: disable Activity Stream recent Highlights in the Library [FF57+]
 user_pref("browser.library.activity-stream.enabled", false);
