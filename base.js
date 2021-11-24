@@ -4,11 +4,10 @@ user_pref("_user.js.parrot", "base overrides: syntax error");
 /*
  * RFP SETTINGS
  */
-// 4504: enable RFP letterboxing
+// 4504: disable RFP letterboxing
 user_pref("privacy.resistFingerprinting.letterboxing", false); // [HIDDEN PREF]
 
-/* 4520: disable chrome animations [FF77+] [RESTART]
- * [NOTE] pref added in FF63, but applied to chrome in FF77. RFP spoofs this for web content ***/
+// 4520: enable chrome animations [FF77+] [RESTART]
 user_pref("ui.prefersReducedMotion", 0); // [HIDDEN PREF]
 
 
@@ -18,62 +17,50 @@ user_pref("ui.prefersReducedMotion", 0); // [HIDDEN PREF]
 // 0211: enforce US English locale regardless of the system locale
 //user_pref("javascript.use_us_english_locale", false); // [HIDDEN PREF]
 
-// 0801: disable location bar using search
+// 0801: Use location bar to search
 user_pref("keyword.enabled", true);
 
-// 0807: disable live search suggestions
+// 0807: enable live search suggestions
 user_pref("browser.search.suggest.enabled", true);
 user_pref("browser.urlbar.suggest.searches", true);
 
-// 1001: disable disk cache
+// 1001: enable disk cache
 user_pref("browser.cache.disk.enable", true);
 
-// 1021: disable storing extra session data
+// 1021: enable storing extra session data
 user_pref("browser.sessionstore.privacy_level", 0);
 
 // 1023: set the minimum interval between session save operations
 user_pref("browser.sessionstore.interval", 15000);
 
-// 1825: disable widevine CDM (Content Decryption Module)
+// 1825: enable widevine CDM (Content Decryption Module)
 user_pref("media.gmp-widevinecdm.visible", true);
 user_pref("media.gmp-widevinecdm.enabled", true);
 
-// 1830: disable all DRM content (EME: Encryption Media Extension)
+// 1830: enable DRM content (EME: Encryption Media Extension)
 user_pref("media.eme.enabled", true);
 
-// 2302: disable service workers [FF32, FF44-compat]
+// 2302: enable service workers [FF32, FF44-compat]
 user_pref("dom.serviceWorkers.enabled", true);
 
-// 2305: disable Push Notifications [FF44+]
+// 2305: enable Push Notifications [FF44+]
 user_pref("dom.push.enabled", true);
 
-// 2420: disable asm.js [FF22+]
+// 2420: enable asm.js [FF22+]
 user_pref("javascript.options.asmjs", true);
 
-// 2422: disable WebAssembly [FF52+]
+// 2422: enable WebAssembly [FF52+]
 user_pref("javascript.options.wasm", true);
 
 /* 2701: disable 3rd-party cookies and site-data [SETUP-WEB]
  * 0=Accept cookies and site data, 1=(Block) All third-party cookies, 2=(Block) All cookies,
  * 3=(Block) Cookies from unvisited websites, 4=(Block) Cross-site and social media trackers (FF63+) (default FF69+)
- * [NOTE] You can set exceptions under site permissions or use an extension
- * [NOTE] Enforcing category to custom ensures ETP related prefs are always honored
- * [SETTING] Privacy & Security>Enhanced Tracking Protection>Custom>Cookies ***/
+ */
 user_pref("network.cookie.cookieBehavior", 4);
 user_pref("browser.contentblocking.category", "strict");
 
 /** SSL (Secure Sockets Layer) / TLS (Transport Layer Security) ***/
-/* 1201: require safe negotiation
- * Blocks connections (SSL_ERROR_UNSAFE_NEGOTIATION) to servers that don't support RFC 5746 [2]
- * as they're potentially vulnerable to a MiTM attack [3]. A server without RFC 5746 can be
- * safe from the attack if it disables renegotiations but the problem is that the browser can't
- * know that. Setting this pref to true is the only way for the browser to ensure there will be
- * no unsafe renegotiations on the channel between the browser and the server.
- * [STATS] SSL Labs (Dec 2020) reports 99.0% of sites have secure renegotiation [4]
- * [1] https://wiki.mozilla.org/Security:Renegotiation
- * [2] https://tools.ietf.org/html/rfc5746
- * [3] https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3555
- * [4] https://www.ssllabs.com/ssl-pulse/ ***/
+// 1201: Don't require safe negotiation (a warning is still shown)
 user_pref("security.ssl.require_safe_negotiation", false);
 
 
@@ -106,7 +93,7 @@ user_pref("clipboard.autocopy", false);
 // 0901: disable saving passwords
 user_pref("signon.rememberSignons", false);
 
-// 2404: disable clipboard commands (cut/copy) from "non-privileged" content [FF41+]
+// 2404: enable clipboard commands (cut/copy) from "non-privileged" content [FF41+]
 user_pref("dom.allow_cut_copy", true);
 
 // Disable smooth scrolling

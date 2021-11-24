@@ -12,7 +12,7 @@ user_pref("network.cookie.lifetimePolicy", 0);
 // 4501: Disable RFP
 user_pref("privacy.resistFingerprinting", false);
 
-// 2001: disable WebRTC (Web Real-Time Communication)
+// 2001: Enable WebRTC (Web Real-Time Communication)
 user_pref("media.peerconnection.enabled", true);
 
 // 2002: limit WebRTC IP leaks if using WebRTC
@@ -20,18 +20,18 @@ user_pref("media.peerconnection.ice.default_address_only", false);
 user_pref("media.peerconnection.ice.no_host", false); // [FF51+]
 user_pref("media.peerconnection.ice.proxy_only_if_behind_proxy", false); // [FF70+]
 
-// 2022: disable screensharing
+// 2022: Enable screensharing
 user_pref("media.getusermedia.screensharing.enabled", true);
 user_pref("media.getusermedia.browser.enabled", true);
 user_pref("media.getusermedia.audiocapture.enabled", true);
 
-// 2510: disable Web Audio API [FF51+]
+// 2510: Enable Web Audio API [FF51+]
 user_pref("dom.webaudio.enabled", true);
 
-// 2010: disable WebGL (Web Graphics Library)
+// 2010: Enable WebGL (Web Graphics Library)
 user_pref("webgl.disabled", false);
 
-// 2012: limit WebGL
+// 2012: unlimit WebGL
 user_pref("webgl.min_capability_mode", false);
 
 
