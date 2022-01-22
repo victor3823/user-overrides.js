@@ -40,35 +40,15 @@ user_pref("media.gmp-widevinecdm.enabled", true);
 // 1830: enable DRM content (EME: Encryption Media Extension)
 user_pref("media.eme.enabled", true);
 
-// 2302: enable service workers [FF32, FF44-compat]
-user_pref("dom.serviceWorkers.enabled", true);
-
-// 2305: enable Push Notifications [FF44+]
-user_pref("dom.push.enabled", true);
-
-// 2420: enable asm.js [FF22+]
-user_pref("javascript.options.asmjs", true);
-
-// 2422: enable WebAssembly [FF52+]
-user_pref("javascript.options.wasm", true);
-
 /* 2701: disable 3rd-party cookies and site-data [SETUP-WEB]
  * 0=Accept cookies and site data, 1=(Block) All third-party cookies, 2=(Block) All cookies,
  * 3=(Block) Cookies from unvisited websites, 4=(Block) Cross-site and social media trackers (FF63+) (default FF69+)
  */
 user_pref("network.cookie.cookieBehavior", 4);
-user_pref("browser.contentblocking.category", "strict");
 
 /** SSL (Secure Sockets Layer) / TLS (Transport Layer Security) ***/
 // 1201: Don't require safe negotiation (a warning is still shown)
 user_pref("security.ssl.require_safe_negotiation", false);
-
-
-/*
- * OTHERS FROM https://www.privacytools.io/browsers/#about_config
- */
-user_pref("privacy.trackingprotection.enabled", true);
-user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 
 
 /*
@@ -113,17 +93,42 @@ user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
  * THEMING 
  */
 
-// Enable userchrome.css, usercontent.css
+// userchrome.css usercontent.css activate
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
+// Proton Enabled #127
+user_pref("browser.proton.enabled", true);
+
+// Proton Tooltip
+user_pref("browser.proton.places-tooltip.enabled", true);
 
 // Fill SVG Color
 user_pref("svg.context-properties.content.enabled", true);
 
-// CSS Blur Filter [FF88+]
+// CSS Color Mix - 88 Above
+user_pref("layout.css.color-mix.enabled", true);
+
+// CSS Blur Filter - 88 Above
 user_pref("layout.css.backdrop-filter.enabled", true);
 
-// Show compact mode option
+// Restore Compact Mode - 89 Above
 user_pref("browser.compactmode.show", true);
 
+// about:home Search Bar - 89 Above
+user_pref("browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar", false);
+
+// Browser Theme Based Scheme - Will be activate 95 Above
+// user_pref("layout.css.prefers-color-scheme.content-override", 3);
+
+// ** Useful Options ***********************************************************
+// Integrated calculator at urlbar
+user_pref("browser.urlbar.suggest.calculator", true);
+
+// Integrated unit convertor at urlbar
+user_pref("browser.urlbar.unitConversion.enabled", true);
+
+// Draw in Titlebar
+// user_pref("browser.tabs.drawInTitlebar", true);
+// user_pref("browser.tabs.inTitlebar",        1); // Nightly, 96 Above
 
 user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!");
