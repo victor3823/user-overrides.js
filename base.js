@@ -7,9 +7,6 @@ user_pref("_user.js.parrot", "base overrides: syntax error");
 // 4504: disable RFP letterboxing
 user_pref("privacy.resistFingerprinting.letterboxing", false); // [HIDDEN PREF]
 
-// 4520: enable chrome animations [FF77+] [RESTART]
-user_pref("ui.prefersReducedMotion", 0); // [HIDDEN PREF]
-
 
 /*
  * [SETUP-*] TAGS
