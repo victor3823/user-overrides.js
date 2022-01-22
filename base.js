@@ -40,12 +40,6 @@ user_pref("media.gmp-widevinecdm.enabled", true);
 // 1830: enable DRM content (EME: Encryption Media Extension)
 user_pref("media.eme.enabled", true);
 
-/* 2701: disable 3rd-party cookies and site-data [SETUP-WEB]
- * 0=Accept cookies and site data, 1=(Block) All third-party cookies, 2=(Block) All cookies,
- * 3=(Block) Cookies from unvisited websites, 4=(Block) Cross-site and social media trackers (FF63+) (default FF69+)
- */
-user_pref("network.cookie.cookieBehavior", 4);
-
 /** SSL (Secure Sockets Layer) / TLS (Transport Layer Security) ***/
 // 1201: Don't require safe negotiation (a warning is still shown)
 user_pref("security.ssl.require_safe_negotiation", false);
