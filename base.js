@@ -19,10 +19,6 @@ user_pref("privacy.resistFingerprinting.letterboxing", false); // [HIDDEN PREF]
 // 0801: Use location bar to search
 user_pref("keyword.enabled", true);
 
-// 0807: enable live search suggestions
-user_pref("browser.search.suggest.enabled", true);
-user_pref("browser.urlbar.suggest.searches", true);
-
 // 1001: enable disk cache
 user_pref("browser.cache.disk.enable", true);
 
