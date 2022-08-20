@@ -1,4 +1,4 @@
-user_pref("_arkenfox.version", "102-1");
+user_pref("_arkenfox.version", "103");
 
 user_pref("_user.js.parrot", "base overrides: syntax error");
 
