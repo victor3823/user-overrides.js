@@ -1,4 +1,4 @@
-user_pref("_arkenfox.version", "103");
+user_pref("_arkenfox.version", "104");
 
 user_pref("_user.js.parrot", "base overrides: syntax error");
 
@@ -61,6 +61,16 @@ user_pref("clipboard.autocopy", false);
 
 // 0901: disable saving passwords
 user_pref("signon.rememberSignons", false);
+
+/* 5017: disable Form Autofill
+ * If .supportedCountries includes your region (browser.search.region) and .supported
+ * is "detect" (default), then the UI will show. Stored data is not secure, uses JSON
+ * [NOTE] Heuristics controls Form Autofill on forms without @autocomplete attributes
+ * [SETTING] Privacy & Security>Forms and Autofill>Autofill addresses
+ * [1] https://wiki.mozilla.org/Firefox/Features/Form_Autofill ***/
+user_pref("extensions.formautofill.addresses.enabled", false); // [FF55+]
+user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
+user_pref("extensions.formautofill.heuristics.enabled", false); // [FF55+]
 
 // 2404: enable clipboard commands (cut/copy) from "non-privileged" content [FF41+]
 user_pref("dom.allow_cut_copy", true);
