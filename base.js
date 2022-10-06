@@ -1,4 +1,4 @@
-user_pref("_arkenfox.version", "104");
+user_pref("_arkenfox.version", "105");
 
 user_pref("_user.js.parrot", "base overrides: syntax error");
 
@@ -24,9 +24,6 @@ user_pref("browser.cache.disk.enable", true);
 
 // 1021: enable storing extra session data
 user_pref("browser.sessionstore.privacy_level", 0);
-
-// 1023: set the minimum interval between session save operations
-user_pref("browser.sessionstore.interval", 15000);
 
 // 1825: enable widevine CDM (Content Decryption Module)
 user_pref("media.gmp-widevinecdm.visible", true);
