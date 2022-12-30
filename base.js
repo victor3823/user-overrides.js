@@ -13,9 +13,6 @@ user_pref("privacy.resistFingerprinting.letterboxing", false); // [HIDDEN PREF]
 /*
  * [SETUP-*] TAGS
  */
-// 0211: enforce US English locale regardless of the system locale
-//user_pref("javascript.use_us_english_locale", false); // [HIDDEN PREF]
-
 // 0801: Use location bar to search
 user_pref("keyword.enabled", true);
 
@@ -35,6 +32,33 @@ user_pref("media.eme.enabled", true);
 /** SSL (Secure Sockets Layer) / TLS (Transport Layer Security) ***/
 // 1201: Don't require safe negotiation (a warning is still shown)
 user_pref("security.ssl.require_safe_negotiation", false);
+
+
+/*
+ * Disable JIT
+ */
+/* 5504: disable asm.js [FF22+]
+ * [1] http://asmjs.org/
+ * [2] https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=asm.js
+ * [3] https://rh0dev.github.io/blog/2017/the-return-of-the-jit/ ***/
+user_pref("javascript.options.asmjs", false);
+/* 5505: disable Ion and baseline JIT to harden against JS exploits
+ * [NOTE] When both Ion and JIT are disabled, and trustedprincipals
+ * is enabled, then Ion can still be used by extensions (1599226)
+ * [1] https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox+jit
+ * [2] https://microsoftedge.github.io/edgevr/posts/Super-Duper-Secure-Mode/ ***/
+user_pref("javascript.options.ion", false);
+user_pref("javascript.options.baselinejit", false);
+user_pref("javascript.options.jit_trustedprincipals", true); // [FF75+] [HIDDEN PREF]
+/* 5506: disable WebAssembly [FF52+]
+ * Vulnerabilities [1] have increasingly been found, including those known and fixed
+ * in native programs years ago [2]. WASM has powerful low-level access, making
+ * certain attacks (brute-force) and vulnerabilities more possible
+ * [STATS] ~0.2% of websites, about half of which are for crytopmining / malvertising [2][3]
+ * [1] https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=wasm
+ * [2] https://spectrum.ieee.org/tech-talk/telecom/security/more-worries-over-the-security-of-web-assembly
+ * [3] https://www.zdnet.com/article/half-of-the-websites-using-webassembly-use-it-for-malicious-purposes ***/
+user_pref("javascript.options.wasm", false);
 
 
 /*
