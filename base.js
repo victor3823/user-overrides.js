@@ -58,7 +58,7 @@ user_pref("javascript.options.jit_trustedprincipals", true); // [FF75+] [HIDDEN 
  * [1] https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=wasm
  * [2] https://spectrum.ieee.org/tech-talk/telecom/security/more-worries-over-the-security-of-web-assembly
  * [3] https://www.zdnet.com/article/half-of-the-websites-using-webassembly-use-it-for-malicious-purposes ***/
-user_pref("javascript.options.wasm", false);
+//user_pref("javascript.options.wasm", false);
 
 
 /*
