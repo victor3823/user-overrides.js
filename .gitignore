@@ -1,1 +1,6 @@
-.directory
+*
+!LICENSE
+!README.md
+!base.js
+!profile-*.js
+
