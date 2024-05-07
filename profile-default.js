@@ -1,15 +1,13 @@
 user_pref("_user.js.parrot", "Default profile: syntax error");
 
 
-// 2811: Clear-on-shutdown items
+/* override recipe: enable session restore ***/
+user_pref("browser.startup.page", 3); // 0102
+user_pref("browser.privatebrowsing.autostart", false); // 0110 required if you had it set as true
+  // user_pref("browser.sessionstore.privacy_level", 0); // 1003 optional to restore cookies/formdata
+user_pref("privacy.clearOnShutdown.history", false); // 2811
 user_pref("privacy.clearOnShutdown.downloads", false); // [DEFAULT: true]
-user_pref("privacy.clearOnShutdown.history", false);   // [DEFAULT: true]
-
-// 2812: reset default items to clear with Ctrl-Shift-Del (to match 2811)
-user_pref("privacy.cpd.history", false);  // [DEFAULT: true]
-
-// 0102: restore session on startup
-user_pref("browser.startup.page", 3);
+user_pref("privacy.cpd.history", false); // 2820 optional to match when you use Ctrl-Shift-Del
 
 /* 1603: CROSS ORIGIN: control when to send a referer
  * 0=always (default), 1=only if base domains match, 2=only if hosts match
