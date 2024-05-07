@@ -9,11 +9,6 @@ user_pref("privacy.clearOnShutdown.history", false); // 2811
 user_pref("privacy.clearOnShutdown.downloads", false); // [DEFAULT: true]
 user_pref("privacy.cpd.history", false); // 2820 optional to match when you use Ctrl-Shift-Del
 
-/* 1603: CROSS ORIGIN: control when to send a referer
- * 0=always (default), 1=only if base domains match, 2=only if hosts match
- * NOTE: Use Smart Referer for more granular control */
-user_pref("network.http.referer.XOriginPolicy", 0);
-
 // Enable Firefox Accounts
 user_pref("identity.fxaccounts.enabled", true);
 
