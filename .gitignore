@@ -1,6 +1,8 @@
 *
+!profiles/
+!profiles/*
+!base.js
+!lepton.js
+!deploy.sh
 !LICENSE
 !README.md
-!base.js
-!profile-*.js
-
