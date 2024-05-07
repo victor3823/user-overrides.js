@@ -19,9 +19,6 @@ user_pref("keyword.enabled", true);
 // 1001: enable disk cache
 user_pref("browser.cache.disk.enable", true);
 
-// 1021: enable storing extra session data
-user_pref("browser.sessionstore.privacy_level", 0);
-
 // 1825: enable widevine CDM (Content Decryption Module)
 user_pref("media.gmp-widevinecdm.visible", true);
 user_pref("media.gmp-widevinecdm.enabled", true);
@@ -59,20 +56,6 @@ user_pref("javascript.options.jit_trustedprincipals", true); // [FF75+] [HIDDEN 
  * [2] https://spectrum.ieee.org/tech-talk/telecom/security/more-worries-over-the-security-of-web-assembly
  * [3] https://www.zdnet.com/article/half-of-the-websites-using-webassembly-use-it-for-malicious-purposes ***/
 //user_pref("javascript.options.wasm", false);
-
-
-/*
- * Fonts
- */
-/* 1402: limit font visibility (Windows, Mac, some Linux) [FF94+]
- * Uses hardcoded lists with two parts: kBaseFonts + kLangPackFonts [1], bundled fonts are auto-allowed
- * In normal windows: uses the first applicable: RFP (4506) over TP over Standard
- * In Private Browsing windows: uses the most restrictive between normal and private
- * 1=only base system fonts, 2=also fonts from optional language packs, 3=also user-installed fonts
- * [1] https://searchfox.org/mozilla-central/search?path=StandardFonts*.inc ***/
-user_pref("layout.css.font-visibility.private", 1);
-user_pref("layout.css.font-visibility.standard", 1);
-user_pref("layout.css.font-visibility.trackingprotection", 1);
 
 
 /*
