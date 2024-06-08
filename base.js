@@ -1,4 +1,4 @@
-user_pref("_arkenfox.version", "122");
+user_pref("_arkenfox.version", "126-1");
 
 user_pref("_user.js.parrot", "base overrides: syntax error");
 
@@ -101,9 +101,6 @@ user_pref("extensions.pocket.enabled", false);
 
 // Disable Firefox Accounts
 user_pref("identity.fxaccounts.enabled", false);
-
-// Disable "what's new"
-user_pref("browser.messaging-system.whatsNewPanel.enabled", false); 
 
 
 user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!");
