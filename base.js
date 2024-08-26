@@ -4,6 +4,13 @@ user_pref("_user.js.parrot", "base overrides: syntax error");
 
 
 /*
+ * RFP SETTINGS
+ */
+// 4504: disable RFP letterboxing
+user_pref("privacy.resistFingerprinting.letterboxing", false); // [HIDDEN PREF]
+
+
+/*
  * [SETUP-*] TAGS
  */
 // 0801: Use location bar to search
