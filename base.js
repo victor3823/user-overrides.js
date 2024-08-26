@@ -6,10 +6,14 @@ user_pref("_user.js.parrot", "base overrides: syntax error");
 /*
  * RFP SETTINGS
  */
-user_pref("privacy.resistFingerprinting", true); // 4501
-user_pref("privacy.resistFingerprinting.letterboxing", false); // 4504 optional
+user_pref("privacy.resistFingerprinting", false); // 4501
 user_pref("webgl.disabled", false); // 4520 optional
-user_pref("privacy.spoof_english", 2); // 4506 optional
+
+
+/*
+ * FPP overrides
+ */
+user_pref("privacy.fingerprintingProtection.overrides", "+AllTargets,-CSSPrefersColorScheme,-FontVisibilityRestrictGenerics,-JSLocale,-WebGLRenderCapability");
 
 
 /*
