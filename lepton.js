@@ -1,7 +1,7 @@
 user_pref("_user.js.parrot", "Lepton settings: syntax error");
 
 
-// v8.6.2 Lepton
+// v8.6.3 Lepton
 // ** Theme Default Options ****************************************************
 // userchrome.css usercontent.css activate
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
@@ -50,6 +50,9 @@ user_pref("userChrome.tab.bottom_rounded_corner",      true);
 // Photon Only
 user_pref("userChrome.tab.photon_like_contextline",   false);
 user_pref("userChrome.rounding.square_tab",           false);
+
+// Proton Only
+// user_pref("userChrome.tab.supernova_like_contextline",   true);
 
 // == Theme Compatibility Settings =============================================
 // user_pref("userChrome.compatibility.accent_color",         true); // Firefox v103 Below
@@ -287,7 +290,7 @@ user_pref("userContent.page.proton",           true); // Need proton_color
 // ** Useful Options ***********************************************************
 // Tab preview
 // https://blog.nightly.mozilla.org/2024/02/06/a-preview-of-tab-previews-these-weeks-in-firefox-issue-153/
-user_pref("browser.tabs.cardPreview.enabled",   true);
+user_pref("browser.tabs.hoverPreview.enabled", true);
 
 // Paste suggestion at urlbar
 // https://blog.nightly.mozilla.org/2023/12/04/url-gonna-want-to-check-this-out-these-weeks-in-firefox-issue-150/
