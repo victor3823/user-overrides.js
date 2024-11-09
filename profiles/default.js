@@ -12,6 +12,13 @@ user_pref("privacy.clearSiteData.historyFormDataAndDownloads", false); // FF128+
 user_pref("privacy.clearHistory.historyFormDataAndDownloads", false); // FF128+
 
 
+/* RFPTargets (FPP overrides) */
+user_pref("privacy.resistFingerprinting", false);
+user_pref("privacy.resistFingerprinting.pbmode", false);
+user_pref("privacy.fingerprintingProtection", true);
+user_pref("privacy.fingerprintingProtection.overrides", "+AllTargets,-CSSPrefersColorScheme,-FontVisibilityRestrictGenerics,-JSLocale,-WebGLRenderCapability");
+
+
 // Enable Firefox Accounts
 user_pref("identity.fxaccounts.enabled", true);
 
