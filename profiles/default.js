@@ -20,6 +20,7 @@ user_pref("privacy.resistFingerprinting", false);
 user_pref("privacy.resistFingerprinting.pbmode", false);
 user_pref("privacy.fingerprintingProtection", true);
 user_pref("privacy.fingerprintingProtection.overrides", "+AllTargets,-CSSPrefersColorScheme,-FontVisibilityRestrictGenerics,-JSLocale,-WebGLRenderCapability");
+user_pref("privacy.spoof_english", 1); // 4506 optional
 
 
 // Enable Firefox Accounts
