@@ -1,7 +1,7 @@
 user_pref("_user.js.parrot", "Lepton settings: syntax error");
 
 
-// v8.7.0 Lepton
+// v8.7.1 Lepton
 // ** Theme Default Options ****************************************************
 // userchrome.css usercontent.css activate
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
