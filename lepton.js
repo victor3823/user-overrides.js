@@ -1,7 +1,7 @@
 user_pref("_user.js.parrot", "Lepton settings: syntax error");
 
 
-// v8.7.3 Lepton
+// v8.7.4 Lepton
 // ** Theme Default Options ****************************************************
 // userchrome.css usercontent.css activate
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
@@ -72,7 +72,7 @@ user_pref("userChrome.theme.proton_color.dark_blue_accent", true);
 // user_pref("userChrome.theme.transparent.frame",             true);
 // user_pref("userChrome.theme.transparent.menu",              true);
 // user_pref("userChrome.theme.transparent.panel",             true);
-user_pref("userChrome.theme.non_native_menu",               true); // only for linux
+// user_pref("userChrome.theme.non_native_menu",               true); // only for linux
 
 // user_pref("userChrome.decoration.disable_panel_animate",    true);
 // user_pref("userChrome.decoration.disable_sidebar_animate",  true);
