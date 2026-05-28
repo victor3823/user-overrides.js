@@ -1,4 +1,4 @@
-user_pref("_arkenfox.version", "140");
+user_pref("_arkenfox.version", "144");
 
 user_pref("_user.js.parrot", "base overrides: syntax error");
 
@@ -76,6 +76,10 @@ user_pref("extensions.pocket.enabled", false);
 
 // Disable Firefox Accounts
 user_pref("identity.fxaccounts.enabled", false);
+
+// 2705: set ETP Strict/Custom exception lists (FF141+)
+user_pref("privacy.trackingprotection.allow_list.baseline.enabled", false); // [DEFAULT: true]
+user_pref("privacy.trackingprotection.allow_list.convenience.enabled", false); // [DEFAULT: true]
 
 
 user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!");
